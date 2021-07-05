@@ -9,23 +9,28 @@ body {  font-family: 'Poppins', sans-serif;
 	overflow: hidden;
     height: 461px;
     /* width: 886px; */
-    margin-left: 151px;
+    margin-left: 59px;
     position: relative;
-    bottom: 360px;
+    bottom: 127px;
     align-self: center;
     justify-self: center;
     display: flex;
 }
 
 .feature-right{
-	line-height: 4;
+	line-height: 8;
+    margin-left: 1%;
+    float: left;
+    width: 218px;
+    position: relative;
+    bottom: 533px;
 }
 .feature-left{
 	float: right;
     position: relative;
-    line-height: 4;
-    margin-right: -18px;
-    bottom: 738px;
+    line-height: 8;
+    margin-right: -51px;
+    bottom: 500px;
   
 }
 
@@ -165,11 +170,11 @@ a.border-button:hover {
 
 .section-heading {
 	text-align: center;
-	margin-bottom: 80px;
+	margin-bottom: 5%;
 }
 
 .section-heading h2 {
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 600;
 	color: #1e1e1e;
 }
@@ -485,16 +490,16 @@ header .navbar {
 }
 
 .Modern-Slider .item-1 .img-fill {
-	background-image: url(assets/images/slider-img1.jpg);
+	background-image:url(/assets/images/slider-img1.jpg)
 }
 
 .Modern-Slider .item-2 .img-fill {
-	background-image: url(assets/images/slider-img2.jpg);
+	background-image: url(/assets/images/slider-img2.jpg);
 }
 
 .Modern-Slider .item-3 .img-fill {
-	background-image: url(assets/images/slider-img3.jpg);
-}
+	background-image: url(/assets/images/slider-img3.jpg);
+} 
 
 .Modern-Slider .NextArrow{
   position:absolute;
@@ -614,7 +619,9 @@ ul.slick-dots {
 .slick-loading .slick-slide{visibility:hidden}
 .slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
 
-
+.gallery-top{
+	margin-top: 6%;
+}
 
 
 /* Request Form */
@@ -1326,13 +1333,45 @@ footer .contact-form button.filled-button:hover {
 	color: #ffa93f;
 	font-size: 15px;
 }
+@media (min-width: 1200px){
 
+	.hero {
+		overflow: hidden;
+		height: 461px;
+		/* width: 886px; */
+		margin-left: 162px;
+		position: relative;
+		bottom: 127px;
+		align-self: center;
+		justify-self: center;
+		display: flex;
+	}
+}
 @media (min-width: 1024px){
-	.feature-mob{
+	.feature-left {
+	    float: right;
+    position: relative;
+    line-height: 8;
+    margin-right: -54px;
+    bottom: 496px;
+	}
+	.content{
+		position: relative;
+		top: 193px;
+	
+	}
+
+	.mob-feature{
 		display: none !important;
 	}
-	.hero-mob{
-		display: none !important;
+	.gallery-heading{
+		position: relative !important;
+		top: 500px !important;
+		text-align: center !important;
+	}
+	
+	.gallery{
+		margin-top: 61% !important;
 	}
 	
 }
@@ -1346,16 +1385,52 @@ footer .contact-form button.filled-button:hover {
 
 
 }
+.gallery-heading{
+	position: relative;
+	top: 300px;
+	text-align: center;
+}
+ @media(max-width: 768px) {
+	.gallery-heading{
+		position: relative !important;
+		top: 200px !important;
+		text-align: center !important;
+	}
+	.gallery{
+		margin-top: 80%;
+	}
 
+	.features{
+		display: none;
+	}
+}
+ @media (min-width: 426px) {
+	.gallery{
+		margin-top: 50%;
+	}
+	
+		.gallery-heading{
+			position: relative;
+			top: 200px ;
+			text-align: center ;
+		}
+}
 
 /* Responsive Style */
-@media (max-width: 768px) {
+ @media (max-width: 1023px) {
+	.gallery-heading{
+		position: relative ;
+		top: 344px ;
+		text-align: center ;
+	}
 	.testimonials {
 		margin-top: 334px;
 		background-color: #f7f7f7;
 		padding: 140px 0px;
 	}
-
+	.features{
+		display: none;
+	}
 	.grid-feature{
 		grid-template-columns: 2.3fr 3fr 1fr;
 		display: grid;
@@ -1363,17 +1438,17 @@ footer .contact-form button.filled-button:hover {
 		bottom: 40px;
 	}
 	.feature-mob{
-		grid-column: 2/3;
+	
     line-height: 2;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 16px;
 	}
 	.feature-right {
 		display: none;
 	}
 	.feature-left {
 		display: none;
-	}
+	} */
 	
 		.sub-footer p {
 		color: #fff;
@@ -1467,7 +1542,7 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 
-@media (max-width: 320px) {
+ @media (max-width: 320px) {
 	.testimonials {
 		margin-top: 193px;
 		background-color: #f7f7f7;
@@ -1479,7 +1554,7 @@ footer .contact-form button.filled-button:hover {
 		bottom: 40px !important;
 		margin-left: 33px;
 	}
-	.feature-mob{
+/* 	.feature-mob{
 		grid-column: 2/3 !important;
     line-height: 2 !important;
     font-weight: bold !important;
@@ -1488,29 +1563,32 @@ footer .contact-form button.filled-button:hover {
   .model{
 	width: 339px;
     margin-left: -23px;
-}
+} */
 }
 .section-heading h2 {
     font-size: 30px;
 
-}
-   @media (max-width: 768px) {
+} 
+  @media (max-width: 768px) {
 	.feature-left{
 		display: none;
 	}
 	.hero{
 		display: none;
 	}
-	.model{
+	/* .model{
 		padding: 0px 26px 0px 26px;
 		position: relative;
 		bottom: 66px;
-	}
+	} */
 	
-}
+} 
 
 
 @media (max-width: 992px) {
+	.gallery-top{
+	margin-top: 15%;
+}
 	.navbar .navbar-brand {
 		position: absolute;
 		left: 30px;
