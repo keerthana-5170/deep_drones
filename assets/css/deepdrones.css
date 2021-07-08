@@ -5,6 +5,9 @@ body {  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.logo{
+	width: 30%;
+}
 .hero{
 	overflow: hidden;
     height: 461px;
@@ -24,6 +27,9 @@ body {  font-family: 'Poppins', sans-serif;
     width: 218px;
     position: relative;
     bottom: 533px;
+}
+.dropdown{
+	height: 39px;
 }
 .feature-left{
 	float: right;
@@ -870,7 +876,7 @@ ul.slick-dots {
 }
 
 .callback-form .contact-form {
-	background-color: #a4c639;
+	background-color: #ffa93f;
 	padding: 60px;
 	border-radius: 5px;
 	text-align: center;
@@ -980,7 +986,7 @@ ul.slick-dots {
 }
 
 .partners {
-	margin-top: 140px;
+	
 	background-color: #f7f7f7;
 	padding: 60px 0px;
 }
@@ -1348,6 +1354,9 @@ footer .contact-form button.filled-button:hover {
 	}
 }
 @media (min-width: 1024px){
+	.logo{
+		width: 30% !important;
+	}
 	.feature-left {
 	    float: right;
     position: relative;
@@ -1393,28 +1402,40 @@ footer .contact-form button.filled-button:hover {
  @media(max-width: 768px) {
 	.gallery-heading{
 		position: relative !important;
-		top: 200px !important;
+		top: 2px !important;
 		text-align: center !important;
 	}
 	.gallery{
-		margin-top: 80%;
+		margin-top: 8%;
 	}
 
 	.features{
 		display: none;
 	}
 }
- @media (min-width: 426px) {
-	.gallery{
-		margin-top: 50%;
+@media (min-width: 768px) {
+	.logo{
+		width: 20%;
 	}
-	
-		.gallery-heading{
-			position: relative;
-			top: 200px ;
-			text-align: center ;
-		}
 }
+@media (max-width: 425px) {
+	.gallery-heading {
+		position: relative !important;
+		top: 60px !important;
+		text-align: center !important;
+	}
+	.gallery{
+		margin-top:  25% !important;
+	}
+	.testimonials {
+		margin-top: 10% !important;
+		background-color: #f7f7f7 ;
+		padding: 140px 0px;
+	}
+	}
+	@media (min-width: 425px) {
+
+	}
 
 /* Responsive Style */
  @media (max-width: 1023px) {
@@ -1448,7 +1469,7 @@ footer .contact-form button.filled-button:hover {
 	}
 	.feature-left {
 		display: none;
-	} */
+	} 
 	
 		.sub-footer p {
 		color: #fff;
