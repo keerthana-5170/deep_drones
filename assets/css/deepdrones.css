@@ -350,7 +350,7 @@ header {
     transition: all 0.3s ease-in-out 0s;
 }
 header .navbar {
-	padding: 20px 0px;
+	padding: 15px 0px;
 }
 .background-header .navbar {
 	padding: 10px 0px;
@@ -405,6 +405,7 @@ header .navbar {
 
 .navbar .navbar-nav a.nav-link {
 	text-transform: capitalize;
+	width: 101px;
 	font-size: 15px;
 	font-weight: 300;
 	letter-spacing: 0.5px;

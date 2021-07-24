@@ -1,5 +1,5 @@
 let carts = document.querySelectorAll('.add-cart');
-
+let cartItems = localStorage.getItem('productsInCart');
 let products = [
     {
         name:'drones7',
@@ -121,7 +121,8 @@ function displayCart(){
         productContainer.innerHTML += `
         <div class="products-container">
         <div class="product-title">
-        <button onclick={deleteItemFromCart(${item.name})}>remove</button>
+    
+        <button onclick='deleteItemFromCart(${item.name})'>remove</button> 
            <ion-icon name="close-circle-outline"></ion-icon>
             <img src="assets/images/${item.name}.jpg">
             <span class="span">${item.name}</span>
@@ -148,13 +149,35 @@ function displayCart(){
          </div>
        `
     }
+   
 }
-function deleteItemFromCart(productName){
+function deleteItemFromCart(product){
+    //let product = JSON.stringify(productName);
     //let cartItem = JSON.parse(localStorage.getItem('productsInCart'));
     //let newCartItems = cartItem.filter((item) => item.name != productName);
-    console.log(productName);
+    console.log(product.name);
     //localStorage.setItem("productsInCart",JSON.stringify(newCartItems));
-    //displayCart();
+    
 }
+function addItems(product){
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    
+        cartItems[product.name].incart += 1;
+        localStorage.setItem("productsInCart",JSON.stringify( cartItems))
+    }
+    function removeItems(product){
+        let cartItems = localStorage.getItem('productsInCart');
+        cartItems = JSON.parse(cartItems);
+    
+        
+            cartItems[product.name].incart -= 1;
+            localStorage.setItem("productsInCart",JSON.stringify( cartItems))
+        }
+          
+    
+
+
  onLoadCartNumbers();
  displayCart();
