@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> -->
+
 
     <link rel="stylesheet" href="assets/css/cart.css">
     
@@ -98,6 +99,7 @@
 
             for (var i in cartArray) {
                 output += "<li>"
+                    +" <img src='assets/images/"+cartArray[i].name+".jpg'>"
                     +cartArray[i].name
                     +" <input class='item-count' type='number' data-name='"+cartArray[i].name+"' value='"+cartArray[i].count+"' >"
                     +" x "+cartArray[i].price
