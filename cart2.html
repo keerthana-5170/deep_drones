@@ -56,21 +56,32 @@
     </nav>
   </header>
 <body>
-  
-    <h1>Shopping Cart</h1>
-
-    <div style="display: flex; flex-direction:column;width:fit-content;">        
-            <button id="clear-cart">Clear Cart</button>
-    </div>
-
-
-    <div>
-        <ul id="show-cart">
-            <li>???????</li>
-        </ul>
-        <div>You have <span id="count-cart">X</span> items in your cart</div>
-        <div>Total Cart:$<span id="total-cart"></span></div>
-    </div>
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <h1 class="navbar-brand">SHOPPING CART</h1>
+    <form class="form-inline">
+      <button id="clear-cart" class="btn btn-danger my-2 my-sm-0" type="submit">Clear-Cart</button>
+    </form>
+  </nav>
+  <div>
+    
+    <div class="products-container">
+      <div class="product-header">
+          <p class="product-title">Product</p>
+          <p class="product-price">Price</p>
+          <p class="quantity">Quantity</p>
+          <p class="total">Total</p>
+      </div>
+      <div class="products">
+        <div>
+          <ul id="show-cart">
+              <li >???????</li>
+          </ul>
+          <div class="basketTotalContainer">You have <span id="count-cart">  X   </span> items in your cart</div>
+          <div class="basketTotalContainer ">Total Cart:$<span id="total-cart" class="basketTotal"></span></div>
+      </div>
+      </div>
+  </div>
+    
 
 
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -98,19 +109,32 @@
             var output = "";
 
             for (var i in cartArray) {
-                output += "<li>"
-                    +" <img src='assets/images/"+cartArray[i].name+".jpg'>"
-                    +cartArray[i].name
-                    +" <input class='item-count' type='number' data-name='"+cartArray[i].name+"' value='"+cartArray[i].count+"' >"
-                    +" x "+cartArray[i].price
-                    +" = "+cartArray[i].total
-                    +" <button class='plus-item' data-name='"
-                    +cartArray[i].name+"'>+</button>"
-                    +" <button class='subtract-item' data-name='"
-                    +cartArray[i].name+"'>-</button>"
-                    +" <button class='delete-item' data-name='"
+                output += "<li class='product-list'>"
+                  +"<div class='products-container'>"
+                   
+                    +" <button class='delete-item btn-danger' data-name='"
                     +cartArray[i].name+"'>X</button>"
-                    +"</li>";
+                    +" <img src='assets/images/"+cartArray[i].name+".jpg'>"
+                    +"<p >"
+                    +cartArray[i].name +"&nbsp "
+                    +"</p>"    
+                    +"<p >"     
+                    +cartArray[i].price
+                    +"</p>"
+                    +" <button class='plus-item btn-primary' data-name='"
+                    +cartArray[i].name+"'>+</button>"
+                    +"<p>" 
+                    +cartArray[i].count
+                    +"</p>"
+                    +" <button class='subtract-item btn-primary' data-name='"
+                    +cartArray[i].name+"'>-</button>"
+                    +"<p class='totals' style='width:6%'>"
+                    +cartArray[i].total;
+                    +"</p>"
+                    +"</div>"
+                    +"</li>"
+
+                    
             }
 
             $("#show-cart").html(output);

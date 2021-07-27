@@ -8,12 +8,12 @@
     margin-top: 50px;
  
 }
-.products-container ion-icon{
-    font-size: 25px;
-    color: black;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
+#count-cart{
+    padding: 0% 0.5%;
+}
+.product-list div{
+    display: flex;
+    justify-content: space-around;
 }
 .product-header{
     width: 100%;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 .product-title{
-    width: 45%;
+    width: 63%;
     display: flex;
     margin: 0 auto;
     border-bottom: 4px solid lightgray;
@@ -45,7 +45,7 @@
         display:flex;
 }
 .quantity{
-    width: 30%;
+    width: 26%;
     margin: 0 auto;
     border-bottom: 4px solid lightgray;
     display: flex;
@@ -68,6 +68,8 @@ h5{
     justify-content: flex-end;
     width: 100%;
     padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
 }
 .basketTotalTitle{
   
@@ -76,4 +78,356 @@ h5{
 }
 .basketTotal{
     width: 10%;
+    font-weight: bold;
 }
+.shop-head{
+    margin-top: 3%;
+    text-align: center;
+
+   
+}
+
+.delete-item , .plus-item , .subtract-item{
+    height: 2%;
+    border-radius: 21px;
+    width: 30px;
+}
+#show-cart{
+    list-style: none;
+    margin-top: 6%;
+     padding: 0px;
+
+}
+.clear-cart{
+    float: right;
+    margin-right: 4%;
+    position: relative;
+    display: flex;
+    bottom: 47px;
+}
+@media (max-width:425px) {
+    .basketTotalContainer{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px 0;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .basketTotalTitle{
+      
+        width: 30%;
+       
+    }
+    .basketTotal{
+        width: 10%;
+        font-weight: bold;
+    }
+    .shop-head{
+        margin-top: 3%;
+        text-align: center;
+        font-size:25px;
+    }
+    .clear-cart{
+        position: relative;
+        top: 2px;
+        margin-right: 33%;
+    }
+    .products-container{
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 4%;     
+    }
+    
+    .product-list div{
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+    }
+    .product-header{
+        width: 100%;
+        font-size: 13px;
+        max-width: 650px;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        
+        margin: 0 auto;
+    }
+    .product-title{
+        width: 92%;
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        align-items: center;
+    }
+    .product-price{
+        width: 23%;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    }
+    .total{
+        width: 18%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+            align-items: center;
+            display:flex;
+    }
+    .quantity{
+        width: 32%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .delete-item , .plus-item , .subtract-item{
+        height: 26px;
+    border-radius: 19px;
+    width: 24px;
+    margin-top: 5%;
+    }
+    .products-container p{
+        margin-top: 5%;
+        font-weight: bold;
+    }
+}
+@media (min-width:426px) {
+    .shop-head{
+        margin-top: 3%;
+        text-align: center;
+        font-size:25px;
+    }
+    .clear-cart{
+        position: relative;
+        top: 2px;
+        margin-right: 33%;
+    }
+    .products-container{
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 4%;     
+    }
+    
+    .product-list div{
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+    .product-header{
+        width: 100%;
+        font-size: 23px;
+        max-width: 650px;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        
+        margin: 0 auto;
+    }
+    .product-title{
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        align-items: center;
+    }
+    .product-price{
+        width: 23%;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    }
+    .total{
+        width: 18%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+            align-items: center;
+            display:flex;
+    }
+    .quantity{
+        width: 32%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .delete-item , .plus-item , .subtract-item{
+        height: 32px;
+        border-radius: 49px;
+        width: 32px;
+        margin-top: 5%;
+    }
+    
+    .products-container p{
+        margin-top: 5%;
+        font-weight: bold;
+    }
+    .totals{
+        width: 4% !important;
+    }
+}
+@media (max-width:425px) {
+    .shop-head{
+        margin-top: 3%;
+        text-align: center;
+        font-size:25px;
+    }
+    .clear-cart{
+        position: relative;
+        top: 2px;
+        margin-right: 33%;
+    }
+    .products-container{
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 4%;     
+    }
+    
+    .product-list div{
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+    }
+    .product-header{
+        width: 100%;
+        font-size: 13px;
+        max-width: 650px;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        
+        margin: 0 auto;
+    }
+    .product-title{
+        width: 92%;
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        align-items: center;
+    }
+    .product-price{
+        width: 23%;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    }
+    .total{
+        width: 18%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+            align-items: center;
+            display:flex;
+    }
+    .quantity{
+        width: 32%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .delete-item , .plus-item , .subtract-item{
+        height: 26px;
+    border-radius: 19px;
+    width: 24px;
+    margin-top: 5%;
+    }
+    .products-container p{
+        margin-top: 5%;
+        font-weight: bold;
+    }
+}
+@media (min-width:768px) {
+    .shop-head{
+        margin-top: 3%;
+        text-align: center;
+        font-size:25px;
+    }
+    .clear-cart{
+        position: relative;
+        top: 2px;
+        margin-right: 33%;
+    }
+    .products-container{
+        max-width: 650px;
+        justify-content: space-around;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        padding: 4%;     
+    }
+    
+    .product-list div{
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+    }
+    .product-header{
+        width: 100%;
+        font-size: 23px;
+        max-width: 650px;
+        display: flex;
+        font-weight: bold;
+        justify-content: flex-start;
+        
+        margin: 0 auto;
+    }
+    .product-title{
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        align-items: center;
+    }
+    .product-price{
+        width: 23%;
+    margin: 0 auto;
+    border-bottom: 4px solid lightgray;
+    display: flex;
+    align-items: center;
+    }
+    .total{
+        width: 18%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+            align-items: center;
+            display:flex;
+    }
+    .quantity{
+        width: 32%;
+        margin: 0 auto;
+        border-bottom: 4px solid lightgray;
+        display: flex;
+        align-items: center;
+    }
+    .delete-item , .plus-item , .subtract-item{
+        height: 32px;
+        border-radius: 49px;
+        width: 32px;
+        margin-top: 5%;
+    }
+    
+    .products-container p{
+        margin-top: 5%;
+        font-weight: bold;
+    }
+    .totals{
+        width: 4% !important;
+    }
+}
+
