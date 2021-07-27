@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Setting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/992e697e7d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+     .flex-container{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            display: block;
+            width: 100%;
+            background: #4e4e4d;
+            padding: 12px;
+            box-sizing: border-box;
+            text-align: center;
+            color: rgb(250, 245, 242);   
+        }
+        *{
+            box-sizing: border-box;
+        }
+       .column1{
+           float: left;
+           width: 30.00%;
+           padding: 10px;
+           height: 300px;
+          
+       }
+       .column2{
+           float: left;
+           width: 69.85%;
+           padding: 10px;
+           height: 1200px;
+       }
+       button {
+            background-color: #2e2e2d;
+            color: rgb(255, 252, 250);
+            padding: 0.2em 15px;
+            margin:0 0.3em 0.3em 0;
+            border: none;
+            cursor: pointer;
+            width: 70%;
+            opacity: 0.8;
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            }
+
+      
+        @media all and (max-width:30em){
+            .button{
+                display: block;
+                margin: 10em auto;
+            }
+        }
+        .box1{
+            width: 97%;
+            height: 60px;
+            padding: 10px;
+            border: 1px solid rgb(158, 158, 158);
+        }
+        .box2{
+            width: 97%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid rgb(199, 199, 199);
+        }
+       /* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+.centerBlock1 {
+  display: block;
+  margin-left: auto;
+}
+.input value{
+   text-align: center;  
+  }
+.centerBlock2{
+  margin-right: 7em;
+}
+.button .btn btn-default{
+    padding-top: 4; 
+}
+
+.modal{
+    position:fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-60%);
+    z-index: 10;
+    background-color: white;
+    color: black ;
+    width: 500px;
+    max-width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 5px;
+    width: 50%;
+}
+.form small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.data .error input{
+     border-color: #e74c3c;
+}
+.data .error i.fas fa-exclamation-circle{
+    color: #e74c3c
+}
+.data .error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form btn{
+    padding: 14px 20px;
+  background-color: #f44336;
+}
+    </style>
+    <body>
+        
+        <div class="container">
+        <div class="flex-container">
+           100+New Arrivals!!
+        </div>
+
+        <div class="row">
+            <div class="column1">
+                <p>ISWARYA'S OFFERS</p>
+                <hr style="width:70%;text-align:left;margin-left: 0">
+                <a href = 'cart.html'>
+               <button class ="button-1".style.display='block'>
+                    Order History
+                </button>
+                </a>
+                <br>
+                <a href = 'Account Settings.html'>
+                    <button class="button-2".style.display='block' >
+                     Account Setting
+                    </button>
+                </a>
+                <hr style="width:70%;text-align:left;margin-left: 0">
+            </div>
+
+                          <!--Account Settings-->
+            <div class="column2">
+                <h2>ACCOUNT SETTING</h2>
+                <hr style="width:90%;text-align:left;margin-left: 0; background: black;">
+
+            <div class="user-section ">
+              <a name="form-section-name"></a>
+                <h3 class="text">
+                        Customer Name
+                </h3>    
+        <div class="box1">
+            <div class="user-section-1">
+              <div class="row">
+                <div class="col-sx-4 col-md-4 col-lg-4">
+                  <div class="centerBlock1">
+                     Name:
+                   </div>
+                 </div>
+               <div class="col-sm-8 col-md-8 col-lg-8">   
+                     Iswarya R
+                 </div>
+               </div>
+            </div>
+            <div class="col-md-3 col-md-offset-10">
+                     <!--Edit Button-->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Edit</button>
+                         
+              
+                <!--Pop up of Edit form -->
+                <div class="modal-bg">
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                     <div class="centre">
+                        <div class="form">
+                            <div class="header">
+                            <h3>Customer Name</h3><hr>
+                         <form action="#">
+                            <div class="data error">
+                                <label for="fname">First Name</label><br>
+                                <input type="text" placeholder="First Name" maxlength="50">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Please enter your first name </small>
+                            </div>
+
+                            <div class="data error">
+                                <label for="fname">Last Name</label><br>
+                                <input type="text" placeholder="Last Name" maxlength="50">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Please enter your last name </small>
+                            </div>
+                            <button type="submit" class="savebtn">Save</button>
+                               
+                               <script>
+                               // Get the modal
+                               var modal = document.getElementById('id01');                               
+                               // When the user clicks anywhere outside of the modal, close it
+                               window.onclick = function(event) {
+                                 if (event.target == modal) {
+                                   modal.style.display = "none";
+                                 }
+                               }
+                               </script>
+                       </div>    <!--Pop up of Sign IN form ends-->       
+                     </div>
+                 </div>
+               </div>
+            </div>                  
+        </div>                   
+                <div class="user-section">
+                    <a name="form-section-name"></a>
+                                
+                             <h3 class="text">
+                                Contact Information
+                                </h3>    
+                        <div class="box2">
+                                <div class="user-section-1">
+                                        <div class="row">
+                                            <div class="col-sx-4 col-md-4 col-lg-4">
+                                                <div class="centerBlock1">
+                                                    Email: <br><br>
+                                                    Mobile No:
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8 col-md-8 col-lg-8">
+                                              iswaryasanjana354@gmail.com<br><br>
+                                              9566750957
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-md-offset-10">
+                                        <button type="button" class="btn btn-default">Edit</button>
+                                    </div>
+                                    </div>    
+                        
+                                    <div class="user-section ">
+                                        <a name="form-section-name"></a>
+                                        
+                                        <h3 class="text">
+                                        Password
+                                        </h3>    
+                                <div class="box1">
+                                        <div class="user-section-1">
+                                                <div class="row">
+                                                    <div class="col-sx-4 col-md-4 col-lg-4">
+                                                        <div class="centerBlock1">
+                                                            Password:
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-md-8 col-lg-8">   
+                                                      **********
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-md-offset-10">
+                                             
+
+                                            </div>
+                                        </div>
+                                            <div class="user-section">
+                                                <a name="form-section-name"></a>
+                                                
+                                                <h3 class="text">
+                                                Two-Step Verification
+                                                </h3>    
+                                        <div class="box1">
+                                                <div class="user-section-1">
+                                                        <div class="row">
+                                                            <div class="col-sx-4 col-md-4 col-lg-4">
+                                                                <div class="centerBlock1">
+                                                                    Two-step Verification:
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-8 col-md-8 col-lg-8">   
+                                                              Off
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-md-offset-10">
+                                                    
+
+                                                    </div>
+                                                </div>
+
+                                                    <div class="user-section ">
+                                                        <a name="form-section-name"></a>
+                                                        
+                                                        <h3 class="text">
+                                                        Saved Shipping Addresses
+                                                        </h3>    
+                                                <div class="box1">
+                                                        <div class="user-section-1">
+                                                                <div class="row">
+                                                                    <div class="col-sx-4 col-md-4 col-lg-4">
+                                                                        <div class="centerBlock1">
+                                                                            No saved addresses yet!
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3 col-md-offset-10">
+                                                              
+
+                                                            </div>
+                                                           
+                                                            </div>
+                                            
+                                                            <div class="user-section ">
+                                                                <a name="form-section-name"></a>
+                                                                
+                                                                <h3 class="text">
+                                                                Saved Payment
+                                                                </h3>    
+                                                        <div class="box1">
+                                                                <div class="user-section-1">
+                                                                        <div class="row">
+                                                                            <div class="col-sx-4 col-md-4 col-lg-4">
+                                                                                <div class="centerBlock1">
+                                                                                    No saved payment yet!
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-md-offset-10">
+                                                                      
+
+            <!--Sign In Button-->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Edit</button>
+                         
+              
+                <!--Pop up of Sign IN form -->
+                <div class="modal-bg">
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <div class="centre">
+                            <div class="container">
+                              <h3>Customer Name</h3><hr>
+                             <form action="#">
+                                <div class="data">
+                                     <label for="email"><b>Email or Mobile number</b></label>
+                                     <input type="text" autocomplete="email" placeholder="Email" maxlength="50" placeholder="Enter Email" name="email" required>
+                                </div>
+    
+                                <div class="data">
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                </div>
+                                     
+                                <div class="forgot-pass"><a href="#">Forgot Password</a></div>
+                                      
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <button type="submit" class="signupbtn">SIGN IN</button>
+                                </div>
+    
+                                <div class="signin-link">Not a member?  <a href="create Account.html">Create a account</a></div>
+                              </form>
+                            </div>
+                        </div>
+                               
+                               <script>
+                               // Get the modal
+                               var modal = document.getElementById('id01');                               
+                               // When the user clicks anywhere outside of the modal, close it
+                               window.onclick = function(event) {
+                                 if (event.target == modal) {
+                                   modal.style.display = "none";
+                                 }
+                               }
+                               </script>
+                       </div>    <!--Pop up of Sign IN form ends-->
+                                                                          <div class="modal-body"></div>
+                                                                      </div>
+                                                                    </div>
+                                                                   
+                                                                    </div>
+                                                    </div>                    
+                                          
+                        
+                        
+                        <div class="user-edit-link text-right _edit-link_1pvk7d _wrapper_irr57c">
+                            <div class="col-xs-5 qa-value text-capitalize" style="text-align:right;line-height: 0vmax">
+                       
+                                      
+</body>
+</html>
