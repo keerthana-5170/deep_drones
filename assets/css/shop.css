@@ -13,6 +13,9 @@ body {
 .logo{
 	width: 30%;
 }
+.buttons{
+    margin-right: 20%;
+}
 p {
 	margin-bottom: 0px;
 	font-size: 14px;
@@ -1039,7 +1042,12 @@ footer .inner-content p a {
 		margin-left: 0px;
 	}
 }
-
+@media (max-width: 425px){
+	.buttons{
+		margin-top: 8%;
+		margin-left: 3%;
+	}
+}
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
 		position: absolute;
