@@ -135,12 +135,17 @@
                         <form action="" method="GET">
                             <input type="hidden" name="product-title" value="Activewear">
                             
-                            <div class="row pb-3">
+                            <div class="row pb-3" style="margin-top: 8%; ">
                                 
                                 <div class="col d-grid">
                                     <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones7" data-price="25.75">Add To Cart</a>
                                 </div>
-                                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                <div class="buttons">
+                                  <button class="btn" onclick="showPrev()">Prev</button>
+                                 <button class="btn"onclick="showNext()">Next</button>
+                                 <button type="button" class="btn cancel btn-danger" onclick="closeForm()">Close</button>
+                                </div>
+                                
                             </div>
                         </form>
   
@@ -187,11 +192,16 @@
                       <form action="" method="GET">
                           <input type="hidden" name="product-title" value="Activewear">
                         
-                          <div class="row pb-3">
+                          <div class="row pb-3" style="margin-top: 8%;">
                               <div class="col d-grid">
                                 <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones6" data-price="30.25"  >Add To Cart</a>
                               </div>
-                              <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+                              <div class="buttons">
+                                <button onclick="showPrev()" class="btn">Prev</button>
+                               <button onclick="showNext()" class="btn">Next</button>
+                               <button type="button" class="btn cancel btn-danger" onclick="closeForm1()">Close</button>
+                              </div>
+                             
   
                           </div>
                       </form>
@@ -239,12 +249,17 @@
                     <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
                       
-                        <div class="row pb-3">
+                        <div class="row pb-3" style="margin-top: 8%;">
                             
                             <div class="col d-grid">
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones5" data-price="22.33"  >Add To Cart</a>
                             </div>
-                             <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+                            <div class="buttons">
+                              <button onclick="showPrev()" class="btn">Prev</button>
+                             <button onclick="showNext()" class="btn">Next</button>
+                             <button type="button" class="btn cancel btn-danger" onclick="closeForm2()">Close</button>
+                            </div>
+                            
                         </div>
                     </form>
   
@@ -289,11 +304,16 @@
                    
                     <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
-                        <div class="row pb-3">
+                        <div class="row pb-3" style="margin-top: 8%; ">
                             <div class="col d-grid">
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones4" data-price="15.50"  >Add To Cart</a>
                             </div>
-                              <button type="button" class="btn cancel" onclick="closeForm3()">Close</button>
+                            <div class="buttons">
+                              <button onclick="showPrev()" class="btn">Prev</button>
+                             <button onclick="showNext()" class="btn">Next</button>
+                             <button type="button" class="btn cancel btn-danger" onclick="closeForm3()">Close</button>
+                            </div>
+                         
                         </div>
                     </form>
                 </div>
@@ -346,14 +366,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row pb-3">
+                        <div class="row pb-3" style="margin-top: 8%;">
                             
                             <div class="col d-grid">
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones3" data-price="12.50"  >Add To Cart</a>
-                              <button type="button" class="btn cancel" onclick="closeForm4()">Close</button>
   
                               </div>
-  
+                              <div class="buttons">
+                                <button onclick="showPrev()" class="btn">Prev</button>
+                               <button onclick="showNext()" class="btn">Next</button>
+                               <button type="button" class="btn cancel btn-danger" onclick="closeForm4()">Close</button>
+                              </div>
+                              
+
                         </div>
                     </form>
   
@@ -409,12 +434,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row pb-3">
+                        <div class="row pb-3" style="margin-top: 8%;">
                             
                             <div class="col d-grid">
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones2" data-price="22.50"  >Add To Cart</a>
                             </div>
-                              <button type="button" class="btn cancel" onclick="closeForm5()">Close</button>
+                            <div class="buttons">
+                              <button onclick="showPrev()" class="btn">Prev</button>
+                             <button onclick="showNext()" class="btn">Next</button>
+                             <button type="button" class="btn cancel btn-danger" onclick="closeForm5()">Close</button>
+                            </div>
+                           
   
                         </div>
                     </form>
@@ -822,6 +852,34 @@
             displayCart();
 
         </script>
+        <script>
+          var visiblediv = 0;
+          function showDiv()
+          {
+            $(".form-popup").hide();
+            $(".form-popup:eq("+ visiblediv +")").show();
+          }
+          showDiv();
+          function showPrev(){
+            if(visiblediv == 0){
+              visiblediv == $(".form-popup").length-1;
+            }
+            else{
+              visiblediv --;
+            }
+            showDiv();
+          }
+          function showNext(){
+            if(visiblediv == $(".form-popup").length-1){
+              visiblediv=0;
+            }
+            else{
+              visiblediv ++;
+            }
+            
+            showDiv();
+          }
+          </script>
     </body>
 </html>
 
