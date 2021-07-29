@@ -426,7 +426,18 @@ button{
     background-color: #fff;
     opacity: 1;
 }
-
+@media (max-width: 425px){
+	.buttons{
+		margin-left: 6%;
+        margin-top: 8%;
+	}
+}
+@media (min-width: 768px){
+	.buttons{
+		margin-right: 6%;
+       margin-top: 1%;
+	}
+}
 @media (min-width: 768px) {
 	.logo{
 		width: 20%;
