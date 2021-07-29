@@ -862,7 +862,7 @@
           showDiv();
           function showPrev(){
             if(visiblediv == 0){
-              visiblediv == $(".form-popup").length-1;
+              visiblediv = $(".form-popup").length-1;
              
             }
             else{
@@ -871,8 +871,7 @@
             showDiv();
           }
           function showNext(){
-            console.log(visiblediv);
-            if(visiblediv === $(".form-popup").length){
+            if(visiblediv == $(".form-popup").length){
               visiblediv=0;
             }
             else{
