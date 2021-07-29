@@ -432,3 +432,152 @@ h5{
     }
 }
 
+.modal {
+    display: none ; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(73, 72, 72, 0.452);
+    padding-top: 50px;
+  }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #ffa93f;
+    color: rgb(250, 245, 242);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+   
+  }
+
+  
+/* The Close Button (x) */
+.close {
+
+    position: fixed;
+    z-index: 99999;
+    left: 94%;
+    cursor: pointer;
+    right: 130px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #141414;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.container-1{
+    background: #fff;;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.container-1 form{
+    margin-top: -20px
+}
+
+form .forgot-pass{
+    margin-left: -8px;
+}
+
+form .forgot-pass a{
+     color: #ffa93f;
+     text-decoration: none;
+}
+
+form .forgot-pass a:hover{
+     text-decoration: underline;
+}
+
+form .signin-link{
+    text-align: center;
+} 
+
+form .signin-link a{
+    color: #ffa93f;
+    text-decoration: none;
+}
+
+form .signin-link a:hover{
+    text-decoration: underline;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px black;
+    background: #fffdfe;
+    background-color:snow;
+  }
+  input {
+      width: 50%;
+      height: 25px;
+      display: block;
+      margin: 15px ;
+      text-align:center;
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: hsl(0, 100%, 98%);
+    outline: none;
+  }
+  
