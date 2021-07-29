@@ -801,7 +801,7 @@
 
             function displayCart() {
                 var cartArray = shoppingCart.listCart();
-                console.log(cartArray);
+               
                 var output = "";
 
                 for (var i in cartArray) {
@@ -862,7 +862,7 @@
           showDiv();
           function showPrev(){
             if(visiblediv == 0){
-              visiblediv == $(".form-popup").length-1;
+              visiblediv = $(".form-popup").length-1;
              
             }
             else{
