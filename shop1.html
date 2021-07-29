@@ -141,8 +141,8 @@
                                     <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones7" data-price="25.75">Add To Cart</a>
                                 </div>
                                 <div class="buttons">
-                                  <button class="btn" onclick="showPrev()">Prev</button>
-                                 <button class="btn"onclick="showNext()">Next</button>
+                                  <button type="button" class="btn" onclick="showPrev()">Prev</button>
+                                 <button type="button" class="btn" onclick="showNext()">Next</button>
                                  <button type="button" class="btn cancel btn-danger" onclick="closeForm()">Close</button>
                                 </div>
                                 
@@ -197,8 +197,8 @@
                                 <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones6" data-price="30.25"  >Add To Cart</a>
                               </div>
                               <div class="buttons">
-                                <button onclick="showPrev()" class="btn">Prev</button>
-                               <button onclick="showNext()" class="btn">Next</button>
+                                <button onclick="showPrev()" type="button" class="btn">Prev</button>
+                               <button onclick="showNext()" type="button" class="btn">Next</button>
                                <button type="button" class="btn cancel btn-danger" onclick="closeForm1()">Close</button>
                               </div>
                              
@@ -255,8 +255,8 @@
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones5" data-price="22.33"  >Add To Cart</a>
                             </div>
                             <div class="buttons">
-                              <button onclick="showPrev()" class="btn">Prev</button>
-                             <button onclick="showNext()" class="btn">Next</button>
+                              <button onclick="showPrev()" type="button" class="btn">Prev</button>
+                             <button onclick="showNext()" type="button" class="btn">Next</button>
                              <button type="button" class="btn cancel btn-danger" onclick="closeForm2()">Close</button>
                             </div>
                             
@@ -309,8 +309,8 @@
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones4" data-price="15.50"  >Add To Cart</a>
                             </div>
                             <div class="buttons">
-                              <button onclick="showPrev()" class="btn">Prev</button>
-                             <button onclick="showNext()" class="btn">Next</button>
+                              <button onclick="showPrev()" type="button" class="btn">Prev</button>
+                             <button onclick="showNext()" type="button" class="btn">Next</button>
                              <button type="button" class="btn cancel btn-danger" onclick="closeForm3()">Close</button>
                             </div>
                          
@@ -373,8 +373,8 @@
   
                               </div>
                               <div class="buttons">
-                                <button onclick="showPrev()" class="btn">Prev</button>
-                               <button onclick="showNext()" class="btn">Next</button>
+                                <button onclick="showPrev()" type="button" class="btn">Prev</button>
+                               <button onclick="showNext()" type="button" class="btn">Next</button>
                                <button type="button" class="btn cancel btn-danger" onclick="closeForm4()">Close</button>
                               </div>
                               
@@ -440,8 +440,8 @@
                               <a  class="btn btn-success btn-lg  add-to-cart"  data-name="drones2" data-price="22.50"  >Add To Cart</a>
                             </div>
                             <div class="buttons">
-                              <button onclick="showPrev()" class="btn">Prev</button>
-                             <button onclick="showNext()" class="btn">Next</button>
+                              <button onclick="showPrev()" type="button" class="btn">Prev</button>
+                             <button onclick="showNext()" type="button" class="btn">Next</button>
                              <button type="button" class="btn cancel btn-danger" onclick="closeForm5()">Close</button>
                             </div>
                            
@@ -862,16 +862,16 @@
           showDiv();
           function showPrev(){
             if(visiblediv == 0){
-              visiblediv == $(".form-popup").length-1;
+              visiblediv = $(".form-popup").length-1;
             }
             else{
-              visiblediv --;
+              visiblediv--;
             }
             showDiv();
           }
           function showNext(){
             if(visiblediv == $(".form-popup").length-1){
-              visiblediv=0;
+              visiblediv = 0;
             }
             else{
               visiblediv ++;
