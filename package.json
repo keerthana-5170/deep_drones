@@ -1,0 +1,23 @@
+{
+  "name": "deep_drones",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keerthana-5170/deep_drones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keerthana-5170/deep_drones/issues"
+  },
+  "homepage": "https://github.com/keerthana-5170/deep_drones#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

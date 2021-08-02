@@ -38,7 +38,7 @@ var shoppingCart = (function () {
             }
         }
 
-        console.log("addItemToCart:", name, price, count);
+      
 
         var item = new Item(name, price, count);
         cart.push(item);
@@ -106,10 +106,9 @@ var shoppingCart = (function () {
 
     obj.listCart = function () { // -> array of Items
         var cartCopy = [];
-        console.log("Listing cart");
-        console.log(cart);
+        
         for (var i in cart) {
-            console.log(i);
+            
             var item = cart[i];
             var itemCopy = {};
             for (var p in item) {
