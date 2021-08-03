@@ -93,7 +93,7 @@ var shoppingCart = (function () {
             totalCount += cart[i].count;
         }
          document.querySelector('.cart span').textContent=totalCount;
-
+         
         return totalCount;
     };
     obj.totalCart = function () { // -> return total cost

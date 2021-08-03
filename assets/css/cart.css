@@ -143,6 +143,7 @@
 
 img{
     width: 25%;
+    margin-left: 4%;
     margin-bottom: 7%;
 }
 h5{
@@ -159,7 +160,7 @@ h5{
     padding: 10px 0;
     font-weight: 500;
     font-size: 18px;
-    padding-right: 400px;
+
 }
 .basketTotalTitle{
   
