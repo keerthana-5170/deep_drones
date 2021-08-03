@@ -548,12 +548,7 @@ h5{
 
 /* Set a style for all buttons */
 button {
-    color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
-    margin: 5px;
-    white-space: nowrap;
-    padding:10px 60px !important;
+   
     font-size: 1rem;
     border-radius: .25rem;
     border-radius: 4px;
@@ -622,9 +617,7 @@ button:hover {
   color: #f44336;
   cursor: pointer;
 }
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #8064A2 !important;
-}
+
 /* Clear floats */
 .clearfix::after {
   content: "";
