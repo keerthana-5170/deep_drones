@@ -406,7 +406,7 @@ h5{
         margin: 0 auto;
     }
     .product-title{
-        width: 92%;
+        width: 102%;
         display: flex;
         margin: 0 auto;
         border-bottom: 4px solid lightgray;
@@ -481,14 +481,14 @@ h5{
         margin: 0 auto;
     }
     .product-title{
-        width: 95%;
+        width: 173%;
         display: flex;
         margin: 0 auto;
         border-bottom: 4px solid lightgray;
         align-items: center;
     }
     .product-price{
-        width: 23%;
+        width:7%;
     margin: 0 auto;
     border-bottom: 4px solid lightgray;
     display: flex;

@@ -81,17 +81,15 @@
           <form class="form-inline">
             <div class=".float-sm-left">
             <div class="form-group">
-            <button id="Sign-in" class="btn btn-danger my-2 my-sm-0" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Sign-in </button>
+            <button style="margin-right: 3%;" class="btn btn-success"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Sign-in </button>
             </div>
             </div>
-            <div class="form-group">
-              <button id="clear-cart" class="btn btn-danger my-2 my-sm-0" type="submit">Clear-Cart</button>
-            </div>
+            
 
                <!--Pop up of Sign IN form -->
         <div id="id01" class="modal container-fluid " >
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <div class="centre signin-box" data-aos="flip-right" >
+        <div class="centre signin-box" >
             <div class="container-1">
                 <h1>Sign In</h1> <hr>
             <form action="#">
@@ -133,7 +131,9 @@
           </nav>
         </form>
  
-
+        <div class="form-group">
+          <button id="clear-cart" class="btn btn-danger my-2 my-sm-0" type="submit">Clear-Cart</button>
+        </div>
         <div class="products-container">
           <div class="product-header">
               <p class="product-title">Product</p>
@@ -146,7 +146,7 @@
               <ul id="show-cart">
                   <li >???????</li>
               </ul>
-              <div class="basketTotalContainer">You have <span>0</span>  items in your cart</div>
+         
               
               <div class="basketTotalContainer">Total Cart:$<span id="total-cart" class="basketTotal"></span></div>
           </div>
