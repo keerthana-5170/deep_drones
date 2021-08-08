@@ -649,6 +649,7 @@ form .forgot-pass{
 form .forgot-pass a{
      color: #ffa93f;
      text-decoration: none;
+     padding-right: 5px;
 }
 
 form .forgot-pass a:hover{
@@ -674,13 +675,13 @@ form .signin-link a:hover{
   }
 }
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
+    width: 90%;
+    padding: 20px;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border: 2px black;
     background: #fffdfe;
-    background-color:snow;
+    border: 1px solid #ffa93f;
+    margin-left: 20px;
   }
   input {
       width: 50%;
@@ -690,9 +691,9 @@ input[type=text], input[type=password] {
       text-align:center;
   }
   
-  /* Add a background color when the inputs get focus */
+  
   input[type=text]:focus, input[type=password]:focus {
-    background-color: hsl(0, 100%, 98%);
+    background-color: #fffefe;
     outline: none;
   }
   

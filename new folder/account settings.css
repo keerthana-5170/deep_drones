@@ -1,0 +1,290 @@
+
+.flex-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: block;
+    width: 100%;
+    background: #4e4e4d;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(250, 245, 242);   
+}
+*{
+    box-sizing: border-box;
+}
+.column1{
+   float: left;
+   width: 30.00%;
+   padding: 10px;
+   height: 300px;
+  
+}
+.column2{
+   float: left;
+   width: 69.85%;
+   padding: 10px;
+   height: 1200px;
+}
+button {
+    background-color: #2e2e2d;
+    color: rgb(255, 252, 250);
+    padding: 0.2em 15px;
+    margin:0 0.3em 0.3em 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.8;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    }
+
+@media all {
+    .button{
+        display: block;
+        margin: 10em auto;
+    }
+}
+@media (max-width: 576px) and (min-width: 767px) { 
+        .button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-size: 13px;
+        }
+        .button {
+            padding: 0.2em 15px;
+            margin: 0 0.3em 0.3em 0;
+            width: 70%;
+            opacity: 0.8;
+            position: relative;
+            display: inline-block;
+        }
+        .button, select {
+            text-transform: none;
+            height: 35px;
+                }
+        .h2, h2 {
+            font-size: 1.8rem;
+        }
+        .h3, h3 {
+            font-size: 1.45rem;
+        }
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .col-5 {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 41.666667%;
+            flex: 0 0 41.666667%;
+            max-width: 101.666667%;
+        }
+        body {
+            margin: 0;
+            font-size: 0.75rem;
+            font-weight: 450;
+            line-height: 1.2;
+            text-align: left;
+        }   
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+     }
+  } 
+
+  @media (min-width: 768px) and (max-width: 991.98px){
+            .button, input, optgroup, select, textarea {
+                margin: 0;
+                font-family: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                font-size: 13px;
+            }
+            .button {
+                padding: 0.2em 15px;
+                margin: 0 0.3em 0.3em 0;
+                width: 70%;
+                opacity: 0.8;
+                position: relative;
+                display: inline-block;
+            }
+            .button, select {
+                text-transform: none;
+                height: 35px;
+                    }
+                .h2, h2 {
+                    font-size: 1.8rem;
+                        }
+                .h3, h3 {
+                            font-size: 1.45rem;
+                        }
+                    .container {
+                        width: 100%;
+                        padding-right: 15px;
+                        padding-left: 15px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+            .col-5 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 41.666667%;
+                flex: 0 0 41.666667%;
+                max-width: 101.666667%;
+            }
+            body {
+                margin: 0;
+                font-size: 0.83rem;
+                font-weight: 450;
+                line-height: 1.2;
+                text-align: left;
+            }   
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px;
+         }
+          .col-sx-4 col-md-4 col-lg-4 .col-5 .col-sm{
+             position: relative;
+                width: 30%;
+                min-height: 4px;
+                padding-left: 15px;
+          }
+            }
+.box1{
+    width: 97%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid rgb(158, 158, 158);
+}
+.box2{
+    width: 97%;
+    height: 115px;
+    padding: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+/* Add padding to container elements */
+.container {
+padding: 16px;
+}
+.centerBlock1 {
+display: block;
+margin-left: auto;
+}
+.input value{
+text-align: center;  
+}
+.centerBlock2{
+margin-right: 7em;
+}
+.button .btn btn-default{
+padding-top: 4; 
+}
+.modal-customer_name{
+position:fixed;
+top: 50%;
+left: 60%;
+transform: translate(-50%,-60%);
+z-index: 10;
+background-color: white;
+color: black ;
+width: 450px;
+max-width: 70%;
+border-radius: 5px;
+height: 50%;
+box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.modal-customer_name-header{
+padding: 10px 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.modal{
+position:fixed;
+top: 50%;
+left: 60%;
+transform: translate(-50%,-60%);
+z-index: 10;
+background-color: white;
+color: black ;
+width: 500px;
+max-width: 80%;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.modal-header{
+padding: 10px 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.form{
+margin-bottom: 10px;
+padding-bottom: 20px;
+position: relative;
+}
+.form label{
+display: inline-block;
+margin-bottom: 5px;
+margin-left: 35px;
+}
+.form input{
+border: 2px solid #f0f0f0;
+
+display: block;
+font-family: inherit;
+font-size: 14px;
+padding: 5px 20px;
+width: 60%;
+margin-left: 35px;
+}
+.savebtn{
+  background-color: #2e2e2d;
+    color: rgb(255, 252, 250);
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    opacity: 0.8;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 130px;
+    margin-right: 50%;       
+}
+
+.form small{
+visibility: hidden;
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+.data .error input{
+border-color: #e74c3c;
+}
+.data .error i.fas fa-exclamation-circle{
+color: #e74c3c
+}
+.data .error small{
+color: #e74c3c;
+visibility: visible;
+}
+.form btn{
+padding: 14px 20px;
+background-color: #f44336;
+}
