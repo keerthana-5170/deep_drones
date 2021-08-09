@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding:0 !important;
+}
+p{
+  font-size: 15px;
+}
+.Landing-page-policy{
+     background: url("assets/images/privacy7.jpeg")no-repeat center center fixed;
+     background-size: 100%;
+     height: 500px;
+}
+
+
