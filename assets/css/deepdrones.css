@@ -425,8 +425,7 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+	
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -436,7 +435,7 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #0c0c0b;
+	color: #fff;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
