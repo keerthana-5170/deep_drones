@@ -358,14 +358,14 @@ header .navbar {
 .background-header {
 	top: 0;
 	position: fixed;
-	background-color: #fff!important;
+	background-color: #000!important;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
 }
 .background-header .navbar-brand h2 {
 	color: #ffa93f!important;
 }
 .background-header .navbar-nav a.nav-link {
-	color: #1e1e1e!important;
+	color: #fff!important;
 }
 .background-header .navbar-nav .nav-link:hover,
 .background-header .navbar-nav .active>.nav-link,
@@ -430,9 +430,12 @@ header .navbar {
 	outline: none;
 	border-radius: 0px;
 	position: absolute;
-	right: 30px;
-	top: 20px;
+	right: 30px;	top: 20px;
 }
+.cross:after{
+	color: white !important;
+}
+
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
 	color: #fff;
