@@ -256,12 +256,24 @@ text-align: center;
 		margin-left: 3%;
 	}
 }
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
 @media (max-width: 992px) {
 	.navbar .navbar-brand {
 		position: absolute;
 		left: 30px;
 		top: 32px;
 	}
+  text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff !important;
+    transition: all 0.5s;
+    margin-top: 5px;
 	.navbar .navbar-brand {
 		width: auto;
 	}
