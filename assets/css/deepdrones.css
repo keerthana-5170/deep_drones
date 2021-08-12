@@ -438,14 +438,14 @@ header .navbar {
 	color: white !important;
 }
 
+
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #fff;
+	color: #000;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
 }
-
 
 
 /* Banner Style */
