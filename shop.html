@@ -63,17 +63,61 @@
                   <a class=" nav-link" href="cart.html">
                     <ion-icon name="cart-outline"></ion-icon> Cart <span>0</span>
                 </a>
-                <li class="cart nav-item" style="background-color:#ffa93f ; color:#000; ">
-                  <a class=" nav-link" href="cart.html">
+                <div class="form-group">
+                <li class="cart nav-item" onclick="document.getElementById('id01').style.display='block'" style="background-color:#ffa93f ; color:#000; ">
+                  <a class=" nav-link" href="#">
                     <i class="far fa-user-circle"></i> Sign in 
                 </a>
                
-              </ul>
-            </div>
+           <!--Pop up of Sign IN form -->
+    <div id="id01" class="modal container-fluid " >
+      <div class="request-estimate-close" style="display: block;"><a href="../shop.html" style="position: absolute;right: 20px;"><i class="fas fa-times" ></i></a></div>
+     
+      <div class="centre signin-box" >
+          <div class="container-1">
+              <h1>Sign In</h1> <hr>
+          <form action="#">
+              <div class="data">
+                  <label for="email"><b>Email or Mobile number</b></label>
+                  <input type="text" autocomplete="email" placeholder="Email" maxlength="50" placeholder="Enter Email" name="email" required>
+              </div>
+  
+              <div class="data">
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              </div>
+                  
+              <div class="forgot-pass"><a href="#">Forgot Password?</a></div>
+                    
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signinbtn">SIGN IN</button>
+              </div>
+  
+              <div class="signin-link">Not a member?  <a href="signup.html">Create a account</a></div>
+            </form>
+          </div>
+      </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            </div>    <!--Pop up of Sign IN form ends-->
           </div>
         </nav>
-      </header>
+      </form>
   
+              
+      
+
     <!-- ***** Preloader End ***** -->
     <!-- Page Content -->
     <!-- Banner Starts Here -->
