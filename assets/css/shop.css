@@ -16,6 +16,12 @@ body {
   .btns{
 	  margin-right: 20%;
   }
+  .prev{
+	  margin-right: 18px;
+  }
+  .next{
+	margin-right: 18px;
+}
   p {
 	  margin-bottom: 0px;
 	  font-size: 14px;
@@ -428,12 +434,14 @@ body {
 	  .buttons{
 		  margin-left: 6%;
 		  margin-top: 8%;
+		  display:flex;
 	  }
   }
   @media (min-width: 768px){
 	  .buttons{
 		  margin-right: 6%;
 		 margin-top: 1%;
+		 display: flex;
 	  }
   }
   @media (min-width: 768px) {
