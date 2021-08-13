@@ -306,8 +306,7 @@ header .navbar {
 	background-image: none;
 }
 .navbar .navbar-toggler {
-	border-color: #fff;
-	background-color: #fff;	
+
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -317,12 +316,11 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #000;
+	color: white;
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
 }
-
 
 .form-popup {
   display: none;
@@ -519,7 +517,200 @@ button{
 	font-weight: 500;
 }
 
+.modal {
+    display: none ; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(73, 72, 72, 0.452);
+    padding-top: 50px;
+  }
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+
+/* Set a style for all buttons */
+button {
+   
+    font-size: 1rem;
+    border-radius: .25rem;
+    border-radius: 4px;
+    border: 1px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color:#ffa93f; 
+    color: rgb(250, 245, 242);
+    padding: 14px 25px;
+    margin: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 47%;
+}
+
+button:hover {
+  opacity:1;
+}
+
+  .signinbtn {
+    padding: 14px 20px;
+    background-color: #f44336; 
+    color: rgb(250, 245, 242);
+    padding: 14px 25px;
+    margin: 8px 0;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 47%;
+    text-align: center;
+    float: right;
+  }
+  .cancelbtn, .signinbtn{
+      text-decoration: none;
+
+  }
+
+/* The Close Button (x) */
+.close {
+
+    position: fixed;
+    z-index: 99999;
+    left: 94%;
+    cursor: pointer;
+    right: 130px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #4e4b4b;
+    
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.container-1{
+    background: #fff;;
+    width: 410px;
+    padding: 30px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.container-1 form{
+    margin-top: -20px
+}
+
+form .forgot-pass{
+    margin-left: -8px;
+}
+
+form .forgot-pass a{
+     color: #ffa93f;
+     text-decoration: none;
+     padding-right: 5px;
+}
+
+form .forgot-pass a:hover{
+     text-decoration: underline;
+}
+
+form .signin-link{
+    text-align: center;
+} 
+
+form .signin-link a{
+    color: #ffa93f;
+    text-decoration: none;
+}
+
+form .signin-link a:hover{
+    text-decoration: underline;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    background: #fffdfe;
+    border: 1px solid #ffa93f;
+    margin-left: 20px;
+  }
+  input {
+      width: 50%;
+      height: 25px;
+      display: block;
+      margin: 15px ;
+      text-align:center;
+  }
+  
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #fffefe;
+    outline: none;
+  }
+  @media (min-width: 992px) { 
+	.container-1{
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.container-1{
+		background: #fff;;
+		width: 410px;
+		padding: 30px;
+		box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	}
+	.container-1 form{
+		margin-top: -20px
+	}
+	
+	form .forgot-pass{
+		margin-left: -8px;
+	}
+   }
 
 
 /* Best Features */
