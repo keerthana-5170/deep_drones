@@ -1088,7 +1088,7 @@ footer .inner-content p a {
 }
 
 .accordion a.active {
-  color: #ffa93f!important;
+  color: C!important;
 }
 
 .accordion li .content {
@@ -1280,7 +1280,7 @@ footer ul.social-icons li a {
 }
 
 footer ul.social-icons li a:hover {
-	background-color: #a4c639;
+	background-color: #ffa93f;
 }
 
 footer ul.menu-list li {
@@ -1298,7 +1298,7 @@ footer ul.menu-list li a {
 }
 
 footer ul.menu-list li a:hover {
-	color: #a4c639;
+	color: #ffa93f;
 }
 
 footer .contact-form input {
@@ -1376,7 +1376,7 @@ footer .contact-form button.filled-button {
 
 footer .contact-form button.filled-button:hover {
 	background-color: #fff;
-	color: #a4c639;
+	color: #ffa93f;
 }
 
 
