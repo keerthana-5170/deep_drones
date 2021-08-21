@@ -721,7 +721,6 @@ input[type=text], input[type=password] {
     display: inline-block;
     background: #fffdfe;
     border: 1px solid #ffa93f;
-    margin-left: 20px;
   }
   input {
       width: 50%;
